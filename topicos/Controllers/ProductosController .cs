@@ -7,7 +7,7 @@ namespace topicos.Controllers
 {   
     [ApiController]
     [Route("api/[controller]")]
-    public class ProductosController : Controller
+    public class ProductosController : ControllerBase
     {
         private readonly ApplicationDbContext _context;
 
