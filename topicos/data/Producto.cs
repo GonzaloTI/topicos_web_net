@@ -28,7 +28,8 @@
 
         // Relación con PlanDeEstudio
         public int PlanDeEstudioId { get; set; }
-        public virtual PlanDeEstudio PlanDeEstudio { get; set; }
+   
+        public virtual PlanDeEstudio? PlanDeEstudio { get; set; }
 
         // Relación con Prerequisito (muchos a muchos)
         public virtual ICollection<Prerequisito> Prerequisitos { get; set; } = new List<Prerequisito>();
